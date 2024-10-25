@@ -1,0 +1,6 @@
+html
+  head
+    title!= title
+  body
+    h1 亲爱的用户:#{user.username},祝贺评分成功!
+    a(href='/recommendmovieforuser?userid=#{user.userid}&username=#{user.username}') 点击这里为您推荐电影

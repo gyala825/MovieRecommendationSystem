@@ -1,0 +1,29 @@
+html
+  head
+    title!= title
+    style.
+      body{
+        background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537261291133&di=c04553d39f158272a36be6e3ec0c8071&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fc2fdfc039245d6885bc3be94a2c27d1ed21b2438.jpg);
+      }
+      #reg{
+        padding-top: 2px;
+        margin-top: 10%;
+        margin-left: 37%;
+        background: white;
+        width: 25%;
+        height: 40%;
+        text-align: center;
+      }
+  body
+    div#reg
+      form(action='/register', method='post')
+        h1 用户注册
+        br
+        span 帐号:
+        input(type='text',name='username')
+        br
+        span 密码:
+        input(type='password',name='pwd')
+        br
+        br
+        input(type='submit',value='注册')
